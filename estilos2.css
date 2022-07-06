@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.btnAgregarALista{
+    padding: 5px;
+    margin-top: 8px;
+    color: black;
+    border: solid 3px lightseagreen;
+    background-color: white;
+}
+
+.btnEliminar{
+    padding: 5px;
+    margin-top: 8px;
+    color: black;
+    border: solid 3px lightseagreen;
+    background-color: white;
+}
+
+
+#btnVerMiLista{
+    padding: 9px;
+    margin-top: 8px;
+    color: black;
+    border: solid 3px lightseagreen;
+    background-color: white;
+}
+.btnVerMiListaJugadores
+{
+    text-align: center;
+}
+.tituloMiLista
+{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.tituloMiLista2
+{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tituloMiLista3
+{
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    margin-bottom: -10px;
+}
+
+.contenedorColumnas
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   
+}
+
+.campoBuscar{
+    
+    border: solid 1px white;
+}
+
+
+
+.contenedorLiga
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.contenedorBuscar
+{
+   grid-column: 2/3;
+   grid-row: 1/2;
+   margin-bottom: 15px;
+
+}
+
+.contenedorFrecuencia
+{
+    
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contenedorEdad
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.contenedorValor
+{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.contenedorGoles
+{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.contenedorMinutos
+{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-top: 15px;
+}
+
+.contenedorDuelos
+{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-top: 15px;
+
+}
+
+.contenedorPie
+{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding-top: 15px;
+}
+
+.contenedorPasaporte
+{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    padding-top: 15px;
+}
+
+.campoBuscar
+{
+    color: white;
+    padding: 5px 55px;
+    border: solid 2px white;
+
+    
+}
+
+.textoBuscar
+{
+    margin-top: 15px;
+}
+
+
+
+.contenedorBoton
+{   
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    
+}
+
+.totalBoton
+{
+    text-align: center;
+}
+
+label{
+    color: whitesmoke;
+}
+
+
+
+#btnVaciarLista{
+    text-align: center;
+}
+
+#buscarBtn, #btnVaciar
+{
+    padding: 7px 25px;
+    background-color: black;
+    font-size: 16px;
+    border: white solid 2px;
+    border-radius: 5px; 
+    color: white;   
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#btnVaciar:hover{
+    background-color: white;
+    border: solid 3px lightseagreen;
+    color: black;
+}
+
+
+.btnReset
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#btnLimpiarBusqueda, #btnResetFiltros 
+{   
+    text-decoration: none;
+    color: white;
+    border: white solid 2px;
+    border-radius: 5px; 
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+#btnLimpiarBusqueda:hover
+{
+    background-color: lightseagreen;
+    color: white;  
+    border: white solid 3px;
+}
+
+#btnResetFiltros:hover{
+    background-color: lightseagreen;
+    color: white;  
+    border: white solid 3px;
+}
+
+#buscarBtn:hover
+{
+    background-color: white;
+    color: black;  
+    border: lightseagreen solid 3px;
+
+
+}
+
+.tituloApp
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    color: white;
+    text-align: center
+}
+
+.tituloApp h5{
+    font-size: 14px; 
+    text-align: center; 
+}
+
+
+.titulosBusquedas
+{
+    color: white;
+}
+
+
+.opcionesBusquedasLiga, .opcionesBusquedasPosUnica, .opcionesBusquedasEdad, .opcionesBusquedasValor, .opcionesBusquedasGoles, .opcionesBusquedasMinutos, .opcionesBusquedasDuelos, .opcionesBusquedasPie, .opcionesBusquedasPasaporte 
+{
+    color: lightseagreen;
+    font-size: 15px;
+    border: solid 2px white;
+
+}
+
+.opcionesBusquedasLiga
+{
+    padding: 5px 80px;
+}
+
+.opcionesBusquedasPosUnica
+{
+    padding: 5px 76px;
+}
+
+.opcionesBusquedasEdad
+{
+    padding: 5px 70px;
+}
+
+.opcionesBusquedasValor
+{
+    padding: 5px 61px;
+}
+
+.opcionesBusquedasGoles
+{
+    padding: 5px 83px;
+}
+
+.opcionesBusquedasMinutos
+{
+    padding: 5px 83px;
+}
+
+.opcionesBusquedasDuelos
+{
+    padding: 5px 95px;
+}
+
+.opcionesBusquedasPie{
+    padding: 5px 110px;
+}
+
+.opcionesBusquedasPasaporte
+{
+    padding: 5px 87px;
+}
+
+/* resultados */
+
+.resultadoJugador
+{       
+    display: flex;
+    color: white;
+    margin: 10px;    
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.infoJugador
+{   
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: solid 3px lightseagreen;
+}
+
+.NombreJugador
+{
+
+   background-color: whitesmoke;
+   color: rgb(0, 0, 0);
+   padding: 6px;
+   font-size: 22px;
+   text-align: center;
+}
+
+.EquipoJugador
+{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    padding: 6px;
+    background-color: lightseagreen;
+    border-top: solid 3px black;
+    margin-bottom: 3px;
+}
+
+img{
+    margin-top: -15px;
+}
+
+.textoAlerta
+{   
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#resultados{
+    
+   margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    display: flexbox;
+  }
+
+
+ 
+
+  .resultadoJugador
+{   
+    
+    display: flex;
+    display: inline-block;
+    color: white;
+    margin: 10px;    
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-left: 35px;
+    
+}
+.infoJugador
+{   
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: solid 3px lightseagreen;
+}
+
+.infoJugador2
+{   
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px lightseagreen;
+}
+
+#resultados
+{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#listaDeJugadores
+{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* MEDIA QUERIE PARA CELULAR ----------------------------------------------------------- */
+
+
+@media screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    
+    .contenedorColumnas
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10,1fr);
+        align-items: center;
+        text-align: center;
+        width: 100%;
+       
+    }
+
+    
+    .campoBuscar{
+        
+        border: solid 1px white;
+        
+    }
+
+    
+    
+    .contenedorLiga
+    {   
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .contenedorBuscar
+    {
+        grid-column: 1/3;
+       grid-row: 1/2;
+       
+    }
+    
+    .contenedorFrecuencia
+    {
+        grid-column: 1/3;
+   
+        grid-row: 3/4;
+    }
+    
+    .contenedorEdad
+    {
+        grid-column: 1/3;
+
+        grid-row: 4/5;
+    }
+    
+    .contenedorValor
+    {
+        grid-column: 1/3;
+
+        grid-row: 5/6;
+    }
+    
+    .contenedorGoles
+    {
+        grid-column: 1/3;
+
+        grid-row: 6/7;
+    }
+    
+    .contenedorMinutos
+    {
+        grid-column: 1/3;
+
+        grid-row: 7/8;
+    }
+    
+    .contenedorDuelos
+    {
+        grid-column: 1/3;
+
+        grid-row: 8/9;
+    
+    }
+    
+    .contenedorPie
+    {
+        grid-column: 1/3;
+
+        grid-row: 9/10;
+    }
+    
+    .contenedorPasaporte
+    {
+        grid-column: 1/3;
+
+        grid-row: 10/11;
+    }
+    
+    .campoBuscar
+    {
+        color: white;
+    }
+    
+    
+    
+    .contenedorBoton
+    {   
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        
+        
+    }
+    
+    .totalBoton
+    {
+        text-align: center;
+    }
+    
+    label{
+        color: whitesmoke;
+    }
+    
+    #buscarBtn
+    {
+        padding: 7px 25px;
+        background-color: black;
+        font-size: 16px;
+        border: white solid 2px;
+        border-radius: 5px; 
+        color: white;   
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+    
+    .btnReset
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .btnReset a
+    {   
+        text-decoration: none;
+        color: white;
+        border: white solid 2px;
+        border-radius: 5px; 
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+    
+    .btnReset a:hover
+    {
+        background-color: lightseagreen;
+        color: black;  
+        border: white solid 2px;
+    
+    
+    }
+    
+    #buscarBtn:hover
+    {
+        background-color: lightseagreen;
+        color: black;  
+        border: white solid 2px;
+    
+    
+    }
+    
+    .tituloApp
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgb(0, 0, 0);
+        padding-bottom: 5px;
+        color: white;
+        text-align: center
+    }
+    
+    .tituloApp h5{
+        font-size: 14px; 
+        text-align: center; 
+    }
+ 
+    
+    .opcionesBusquedas {
+        color: lightseagreen;
+        font-size: 12px;
+    }
+    
+    /* resultados */
+ 
+    
+    .infoJugador
+    {   
+        
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border: solid 3px white;
+    }
+    
+    .NombreJugador
+    {
+    
+       background-color: whitesmoke;
+       color: rgb(0, 0, 0);
+       padding: 6px;
+       font-size: 22px;
+       text-align: center;
+    }
+    
+    .EquipoJugador
+    {
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        padding: 6px;
+        background-color: lightgrey;
+        border-top: solid 3px black;
+        margin-bottom: 3px;
+    }
+    
+    img{
+        margin-top: -15px;
+    }
+    
+    .textoAlerta
+    {   
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+    }
+
+
+    .opcionesBusquedasLiga, .opcionesBusquedasPosUnica, .opcionesBusquedasEdad, .opcionesBusquedasValor, .opcionesBusquedasGoles, .opcionesBusquedasMinutos, .opcionesBusquedasDuelos, .opcionesBusquedasPie, .opcionesBusquedasPasaporte 
+{
+    color: lightseagreen;
+    font-size: 15px;
+    text-align: center;
+}
+
+.opcionesBusquedasLiga
+{
+    padding: 5px 80px;
+}
+
+.opcionesBusquedasPosUnica
+{
+    padding: 5px 76px;
+}
+
+.opcionesBusquedasEdad
+{
+    padding: 5px 70px;
+}
+
+.opcionesBusquedasValor
+{
+    padding: 5px 24px;
+}
+
+.opcionesBusquedasGoles
+{
+    padding: 5px 83px;
+}
+
+.opcionesBusquedasMinutos
+{
+    padding: 5px 23px;
+}
+
+.opcionesBusquedasDuelos
+{
+    padding: 5px 95px;
+}
+
+.opcionesBusquedasPie{
+    padding: 5px 110px;
+}
+
+.opcionesBusquedasPasaporte
+{
+    padding: 5px 87px;
+}
+
+}
+
+.formularioSuscripcion
+{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.formularioSuscripcion h4{
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.formularioSuscripcion input{
+    background-color: white;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.formularioSuscripcion ::placeholder{
+    color: black;
+}
+
+#btnSuscripcion{
+    background-color: white;
+    padding: 10px;
+    border: lightseagreen 3px solid;
+    color: black;
+    margin-top: 10px;
+}
+
+
+  .swal-text {
+    background-color: lightseagreen;
+    padding: 10px;
+    border: 2px solid black;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: black;
+  }
+
+
